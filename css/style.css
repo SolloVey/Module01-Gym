@@ -6,7 +6,7 @@
 /*HEADER*/
 
 .container {
-	width: 1824px;
+	width: 1141px;
 	margin: 0 auto;
 	margin-top: 50px;
     padding-left: 15px;
@@ -30,7 +30,7 @@
 	display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 44%;
+    flex-basis: 58%;
 }
 
 .header-nav {
@@ -39,7 +39,7 @@
 
 .header-nav {
 	display: flex;
-	gap: 52px;
+	gap: 58px;
 	font-size: 18px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .network a {
-	padding-left: 3px;
+	padding-left: 4px;
 }
 
 .network-in {
@@ -114,7 +114,7 @@
 	max-width: 1280px;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;
+	margin: 0 280px auto;
 	background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.1) 100%);
 	padding-left: 15px;
 	padding-right: 15px;
@@ -131,7 +131,7 @@
 	position: relative;
 	right: 145px;
 	background-color: #FEFCFE;
-	width: 635px;
+	width: 652px;
 	height: 100%;
 }
 
@@ -143,7 +143,7 @@
 
 .content {
 	position: relative;
-	left: 210px;
+	left: 227px;
 	flex: 0 0 640px;
 	color: #2B3541;
 	padding-top: 192px;
@@ -176,6 +176,7 @@
 }
 
 .content-link {
+	color: #2B3541;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 150%;
@@ -200,7 +201,6 @@
 	width: 52px;
 	height: 55px;
 	margin-top: 203px;
-    margin-left: 90px;
 }
 
 .arrow {
@@ -216,7 +216,7 @@
 
 .visual img {
 	position: absolute;
-	right: 213px;
+	right: 210px;
 	/*right: 10.4%;*/
 	width: 975px;
 	/*width: 51.5%;*/
@@ -470,6 +470,27 @@ h3 {
 .foto-timetable-bottle img {
 	width: 42px;
 	height: 85px;
+	margin-bottom: 40px;
+}
+
+.foto-timetable-heart,
+.foto-timetable-heart img {
+	width: 65px;
+	height: 61px;
+	margin-bottom: 40px;
+}
+
+.foto-timetable-dumbbell,
+.foto-timetable-dumbbell img {
+	width: 91px;
+	height: 50px;
+	margin-bottom: 40px;
+}
+
+.foto-timetable-weight,
+.foto-timetable-weight img {
+	width: 58px;
+	height: 66px;
 	margin-bottom: 40px;
 }
 
