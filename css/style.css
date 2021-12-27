@@ -317,6 +317,8 @@ h3 {
     overflow: hidden;
 }
 
+/*Ниже два варианта решения, скрытия и одновременного показа двух различных элементов.*/
+
 .menu-events-btn {
 	display: block;
 	position: absolute;
@@ -337,6 +339,7 @@ h3 {
 
 .menu-events-info-btn {
 	display: none;
+	/*display: block;*/
 	position: absolute;
 	margin-left: 30px;
 	padding: 20px 2px 20px;
@@ -351,27 +354,33 @@ h3 {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 150%;
+	/*opacity: 0;*/
 }
 
 .event-gradient-fone {
 	display: none;
+	/*display: block;*/
 	position: absolute;
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.1) 100%);
 	width: 100%;
 	height: 600px;
-    opacity: 0.4;
+	opacity: 0.4;
+    /*opacity: 0;*/
 }
 
 .wraper-events:hover > .menu-events-btn {
 	display: none;
+	/*opacity: 0;*/
 }
 
 .wraper-events:hover > .event-gradient-fone {
 	display: block;
+	/*opacity: 0.4;*/
 }
 
 .wraper-events:hover > .menu-events-info-btn {
 	display: block;
+	/*opacity: 1;*/
 }
 
 /*РАСПИСАНИЕ ТРЕНИРОВОК*/
@@ -387,6 +396,8 @@ h3 {
 	line-height: 125%;
 	margin-top: 46px;
 }
+
+/*Разметка нестандартной сетки.*/
 
 .timetable {
 	display: grid;
@@ -424,10 +435,16 @@ h3 {
 	box-sizing: border-box;
 }
 
+/*Стилизация нестандартной сетки.*/
+
 .day-active {
 	border: none;
 	background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
 	box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+}
+
+.day-active > .description-timetable > .description {
+	display: block;
 }
 
 .day:not(.day-active):hover {
@@ -460,10 +477,6 @@ h3 {
 	width: 67px;
 	height: 107px;
 	margin-bottom: 40px;
-}
-
-.jump {
-	padding-top: 20px;
 }
 
 .foto-timetable-bottle,
@@ -511,20 +524,46 @@ h3 {
 .description-timetable {
 	margin-bottom: 20px;
     padding-left: 30px;
+    padding-right: 25px;
 }
 
 .title-timetable {
+	display: block;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 125%;
+	position: relative;
 }
 
+/*Выплывающее описание.*/
+
 .description {
-	display: block;
+	display: none;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 150%;
+	padding-top: 20px;
+	animation: slideUp 1s forwards;
+	transform: translateY(100%);
 }
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.day:not(.day-active):hover .description {
+	display: block;
+	border: none;
+	background: rgba(243, 243, 243, 0.5);
+}
+
+
 
 
 
