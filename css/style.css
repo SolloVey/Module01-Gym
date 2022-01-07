@@ -34,13 +34,11 @@
 }
 
 .header-nav {
-	scroll-behavior: smooth;
-}
-
-.header-nav {
 	display: flex;
+	color: #2B3541;
 	gap: 58px;
 	font-size: 18px;
+	scroll-behavior: smooth;
 }
 
 .header-nav li {
@@ -56,11 +54,11 @@
 .nav-item > ul > li > a:after {
 	display: block;
 	position: absolute;
+	content: "";
 	right: 0; 
 	width: 0;
 	height: 2px; 
 	background-color: #2B3541; 
-	content: "";
 	transition: width 0.2s ease-out; 
 }
 
@@ -92,6 +90,10 @@
 	transform: scale(1.3);
 }
 
+/*.network-in:focus {
+	transform: scale(1.3);
+}*/
+
 .network-fb {
 	width: 30px;
 	height: 30px;
@@ -101,7 +103,11 @@
 
 .network-fb:hover {
 	transform: scale(1.3);
-}	
+}
+
+/*.network-fb:focus {
+	transform: scale(1.3);
+}*/	
 
 /*БАННЕР*/
 
@@ -197,6 +203,13 @@
 	transition: 0.2s;
 }
 
+.content-link:focus {
+	box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+	background: #2B3541;
+	color: #FBF138;
+	transition: 0.2s;
+}
+
 .arrow-training {
 	width: 52px;
 	height: 55px;
@@ -242,6 +255,7 @@
 
 h2  {
 	font-weight: 700;
+	color: #2B3541;
 	font-size: 40px;
 	line-height: 125%;
 	margin-bottom: 39px;
@@ -288,9 +302,9 @@ h3 {
 .menu-events-one {
 	background-image: url(../img/events/event1.png);
 	position: relative;
-	background-position: 0 center;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 	width: 100%;
 	height: 600px;
     overflow: hidden;
@@ -299,9 +313,9 @@ h3 {
 .menu-events-two {
 	background-image: url(../img/events/event2.png);
 	position: relative;
-	background-position: 0 center;
-    background-repeat: no-repeat;    
+	background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 	width: 100%;
 	height: 600px;
     overflow: hidden;
@@ -310,9 +324,9 @@ h3 {
 .menu-events-three {
 	background-image: url(../img/events/event3.png);
 	position: relative;
-	background-position: 0 center;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 	width: 100%;
 	height: 600px;
     overflow: hidden;
@@ -616,6 +630,7 @@ h3 {
 	background-color: #F3F3F3;
 	margin-top: 160px;
 	padding-top: 47px;
+	padding-bottom: 80px;
 }
 
 .mailing-body {
@@ -683,7 +698,267 @@ h3 {
 	transition: 0.2s;
 }
 
+.your-mail-btn:focus {
+	box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+	background: #2B3541;
+	color: #FBF138;
+	transition: 0.2s;
+}
 
+/*Checkbox*/
+
+.checkbox {
+	display: block;
+	margin-top: 11px;
+	margin-left: 15px;
+	padding-left: 24px;
+}
+
+.real-checkbox {
+	position: absolute;
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	margin-left: -22px;
+}
+
+.custom-checkbox {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/checkbox_off.svg);
+	margin-left: -22px;
+}
+
+.real-checkbox:checked + .custom-checkbox {
+	background-image: url(../img/checkbox_on.svg);
+	transition: .2s;
+}
+
+.checkbox-description,
+.checkbox-description a {
+	color: rgba(43, 53, 65, 0.5);
+	font-weight: 400;
+	font-size: 11px;
+}
+
+.checkbox-description a:hover {
+	color: #2B3541;
+	transition: .2s;
+}
+
+/*О КОМПАНИИ*/
+
+.about-company {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 162px;
+	margin-bottom: 64px;
+}
+
+.company-description {
+	width: 483px;
+}
+
+.company-description h2 {
+	margin-top: 0;
+}
+
+.company-description > p {
+	margin-top: -18px;
+	margin-bottom: 54px;
+	color: #2B3541;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.sign-up-link {
+	color: #2B3541;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 21px 52px;
+	background: #FBF138;
+	box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+}
+
+.sign-up-link:hover {
+	box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+	background: #2B3541;
+	color: #FBF138;
+	transition: 0.2s;
+}
+
+.sign-up-link:focus {
+	box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+	background: #2B3541;
+	color: #FBF138;
+	transition: 0.2s;
+}
+
+.promo-foto {
+    position: relative;
+	width: 581px;
+	height: 336px;
+	background-image: url(../img/trainer.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-gradient {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+	background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+}
+
+.advantages-company {
+	display: flex;
+	justify-content: space-between;
+	gap: 65px;
+	margin-bottom: 189px;
+}
+
+.advantages-company-item {
+
+}
+
+.advantages-company-item h3 {
+	font-weight: 700;
+	color: #2B3541;
+	font-size: 18px;
+	line-height: 125%;
+}
+
+.advantages-company-item p {
+	font-weight: 400;
+	color: #2B3541;
+	font-size: 18px;
+	line-height: 150%;
+	opacity: 0.6;
+}
+
+.advantages-company-item:first-child {
+    flex-basis: 24.5%;
+}
+
+.advantages-company-item:nth-child(2) {
+    flex-basis: 30%;
+}
+
+
+
+.advantages-company-item:nth-child(3) {
+    flex-basis: 23%;
+}
+
+
+
+.advantages-company-item:last-child {
+    flex-basis: 21.5%;
+}
+
+/*FOOTER*/
+
+.footer-container {
+	width: 100%;
+	background: #F3F3F3;
+}
+
+.footer {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-item {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 55%;
+}
+
+.footer-nav {
+	display: flex;
+	color: #2B3541;
+	gap: 58px;
+	font-size: 18px;
+	scroll-behavior: smooth;
+}
+
+.footer-nav li {
+	list-style-type: none;
+}
+
+.footer-nav a {
+    position: relative;
+    text-decoration: none;
+	color: #2B3541;
+}
+
+.footer-nav-item > ul > li > a:after {
+	display: block;
+	position: absolute;
+	content: "";
+	right: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #2B3541; 
+	transition: width 0.2s ease-out; 
+}
+
+.footer-nav-item > ul > li > a:hover:after,
+.footer-nav-item  > ul > li > a:focus:after {
+	width: 100%;
+}
+
+.footer-nav {
+	display: flex;
+	font-weight: 400;
+	color: #2B3541;
+	font-size: 14px;
+	line-height: 150%;
+    gap: 85px;
+}
+
+.footer-network {
+	display: flex;
+    align-items: center;
+    width: 290px;
+    height: 30px;
+    gap: 27px;
+}
+
+.footer-mail {
+	font-style: normal;
+	font-weight: 700;
+	color: #2B3541;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 150%;
+	margin-right: 35px;
+	z-index: 1;
+	position: relative;
+}
+
+.footer-mail::before {
+	position: absolute;
+    content: "";
+    pointer-events: none;
+    top: -10px;
+    left: -18px;
+    height: 25px;
+    width: 25px;
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    border-radius: 50%;
+    z-index: -1;
+}
 
 
 

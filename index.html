@@ -215,14 +215,93 @@
 				<h2>Подпишитесь на рассылку</h2>
 				<div class="mail-form">
 					<form action="#">
-						<input class="your-mail" type="text" name="user_email" id="user_mail" placeholder="Ваш e-mail">
-						<button class="your-mail-btn" name="user" value="emale">Подписаться</button>
+						<input class="your-mail" type="text" name="user_email" id="user_mail" placeholder="Ваш e-mail" required>
+						<button class="your-mail-btn" name="user" value="emale">
+							Подписаться
+						</button>
+						<label class="checkbox">
+							<input class="real-checkbox" type="checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="checkbox-description">
+							Согласен с обработкой 
+							<a href="#" class="link-checkbox">персональных данных</a>
+							</span>
+						</label> 
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
+	<section class="company">
+		<div class="main-container">
+			<div class="about-company">
+				<div class="company-description">
+					<h2>О компании</h2>
+					<p>
+						Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь <br>с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.
+					</p>
+					<a href="#" class="sign-up-link">Записаться</a>
+				</div>
+				<div class="promo-foto">
+					<div class="box-gradient"></div>
+				</div>
+			</div>
+			<div class="advantages-company">
+				<div class="advantages-company-item">
+					<h3>Экономия времени</h3>
+					<p>
+						Не нужно тратить время на дорогу
+					</p>
+				</div>
+				<div class="advantages-company-item">
+					<h3>Индивидуальный подход</h3>
+					<p>
+						Внимание тренера пренадлежит только вам
+					</p>
+				</div>
+				<div class="advantages-company-item">
+					<h3>Экономия денег</h3>
+					<p>
+						Средняя цена одной тренировки - 700₽
+					</p>
+				</div>
+				<div class="advantages-company-item">
+					<h3>Опытный персонал</h3>
+					<p>
+						Стаж работы у наших тренеров от 5 лет
+					</p>
+				</div>
+			</div>			
+		</div>
+	</section>
 	</main>
+	<footer>
+		<div class="footer-container">
+			<div class="main-container">
+				<div class="footer">
+					<div class="footer-item">
+						<a href="index.html" class="logo"></a>
+						<nav class="footer-nav-item">
+							<ul class="footer-nav">
+								<li><a href="#mainBody" class="trans">Мероприятия</a></li>
+								<li><a href="#timetable" class="trans">Расписание</a></li>
+								<li><a href="#">О компании</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-network">
+						<a href="mailto:info@freefit.com" class="footer-mail">info@freefit.com</a>
+						<a href="https://instagram.com" target="_blank">
+							<div class="network-in"></div>
+						</a>
+						<a href="https://facebook.com" target="_blank">
+							<div class="network-fb"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="script/app.js"></script>
 </body>
 </html>
