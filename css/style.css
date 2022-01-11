@@ -90,10 +90,6 @@
 	transform: scale(1.3);
 }
 
-/*.network-in:focus {
-	transform: scale(1.3);
-}*/
-
 .network-fb {
 	width: 30px;
 	height: 30px;
@@ -120,7 +116,15 @@
 	background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.1) 100%);
 	padding-left: 15px;
 	padding-right: 15px;
+	/*position: relative;*/
 }
+/*Для баннер поз релатив
+.visual img {
+    position: absolute;
+    right: -94px;
+    width: 50.7vw;
+    top: 41px;
+}*/ 
 
 .visual {
 	display: flex;
@@ -228,7 +232,8 @@
 	position: absolute;
 	right: 210px;
 	/*right: 10.4%;*/
-	width: 975px;
+	width: 50.8vw;
+	/*width: 975px;*/
 	/*width: 51.5%;*/
 	top: 165px;
 	/*top: 163px;*/ /*Для процентного соотношения*/
@@ -526,7 +531,8 @@ h3 {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 125%;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
+	transition: margin-bottom .3s ease;
 }
 
 /*Выплывающее описание.*/
@@ -563,13 +569,14 @@ h3 {
     transition: max-height .6s ease-out;
 }
 
-/*.day:not(.day-active):hover .title-timetable {
+.day:not(.day-active):hover .title-timetable {
     margin-bottom: 20px;
-}*/
+	transition: margin-bottom .3s ease-out;
+}
 
 .day:not(.day-active):hover .description {
     animation-name: show-description;
-    animation-duration: .5s;
+    animation-duration: .4s;
     max-height: 200px;
     opacity: 1;
 }
@@ -637,6 +644,7 @@ h3 {
 	outline: none;
 	margin-right: 15px;
     margin-left: 15px;
+    padding-left: 19px;
 }
 
 .js-mail.error {
@@ -653,7 +661,6 @@ h3 {
 	font-weight: 400;
 	line-height: 150%;
 	font-size: 18px;
-	padding-left: 19px;
 }
 
 .your-mail-btn {
@@ -707,13 +714,13 @@ h3 {
 	position: absolute;
 	width: 18px;
 	height: 18px;
-	background-image: url(../img/checkbox_off.svg);
+	background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='16' height='16' stroke='%232B3541' stroke-width='2'/%3E%3C/svg%3E");
 	margin-left: -22px;
 	transition: .2s ease;
 }
 
 .real-checkbox:checked + .custom-checkbox {
-	background-image: url(../img/checkbox_on.svg);
+	background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='18' height='18' fill='%232B3541'/%3E%3Cpath d='M1 9.51047L6.4791 15L17 4.48955L15.4896 3L6.4791 11.9999L2.48953 8.01042L1 9.51047Z' fill='white'/%3E%3C/svg%3E");
 	transition: .2s ease;
 	border: none;
 }
@@ -949,6 +956,34 @@ h3 {
 .footer-network-social {
 	display: flex;
 	gap: 25px;
+}
+
+.footer-network-in {
+	width: 27px;
+	height: 27px;
+	background-image: url(../img/in.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	transition: 0.5s;
+}
+
+.footer-network-in:hover {
+	transform: scale(1.3);
+}
+
+.footer-network-fb {
+	width: 27px;
+	height: 27px;
+	background-image: url(../img/fb.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	transition: 0.5s;
+}
+
+.footer-network-fb:hover {
+	transform: scale(1.3);
 }
 
 .copyright-info {
