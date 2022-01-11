@@ -45,7 +45,7 @@
 							<h1 class="content-title">
 								онлайн тренировки любой сложности
 								<span class="content-title-number">
-									>15 тренировок
+									&gt 15 тренировок
 								</span>
 							</h1>
 							<p class="content-text">
@@ -81,8 +81,9 @@
 						</div>
 						<a href="#" class="menu-events-info-btn">Учавствовать</a>
 						<div class="menu-events-btn">
-							<p>марафон</p>
+							<span>марафон</span>
 						</div>
+						<div class="menu-events-modile-btn"></div>
 					</div>
 				</div>
 				<div class="menu-events-two">
@@ -96,8 +97,9 @@
 						</div>
 						<a href="#" class="menu-events-info-btn">Учавствовать</a>
 						<div class="menu-events-btn">
-							<p>вебинар</p>
+							<span>вебинар</span>
 						</div>
+						<div class="menu-events-modile-btn"></div>
 					</div>
 				</div>
 					<div class="menu-events-three">
@@ -111,8 +113,9 @@
 							</div>
 							<a href="#" class="menu-events-info-btn">Учавствовать</a>
 							<div class="menu-events-btn">
-								<p>вебинар</p>
+								<span>вебинар</span>
 							</div>
+							<div class="menu-events-modile-btn"></div>
 						</div>
 					</div>
 			</div>
@@ -214,13 +217,13 @@
 			<div class="mailing-body">
 				<h2>Подпишитесь на рассылку</h2>
 				<div class="mail-form">
-					<form action="#">
-						<input class="your-mail" type="text" name="user_email" id="user_mail" placeholder="Ваш e-mail" required>
-						<button class="your-mail-btn" name="user" value="emale">
+					<form action="#" class="js-form" novalidate>
+						<input class="js-mail js-input" type="email" name="user_email" placeholder="Ваш e-mail" required>
+						<button class="your-mail-btn" type="submit">
 							Подписаться
 						</button>
-						<label class="checkbox">
-							<input class="real-checkbox" type="checkbox">
+						<label class="checkbox" for="privacy_check">
+							<input class="real-checkbox js-checkbox" type="checkbox" id="privacy_check">
 							<span class="custom-checkbox"></span>
 							<span class="checkbox-description">
 							Согласен с обработкой 
@@ -290,14 +293,27 @@
 						</nav>
 					</div>
 					<div class="footer-network">
-						<a href="mailto:info@freefit.com" class="footer-mail">info@freefit.com</a>
-						<a href="https://instagram.com" target="_blank">
-							<div class="network-in"></div>
-						</a>
-						<a href="https://facebook.com" target="_blank">
-							<div class="network-fb"></div>
-						</a>
+						<div class="footer-network-mail">
+							<a href="mailto:info@freefit.com" class="footer-mail">info@freefit.com</a>
+						</div>
+						<div class="footer-network-social">
+							<a href="https://instagram.com" target="_blank">
+								<div class="network-in"></div>
+							</a>
+							<a href="https://facebook.com" target="_blank">
+								<div class="network-fb"></div>
+							</a>
+						</div>
 					</div>
+				</div>
+				<div class="copyright-info">
+					<span class="copyright">
+						&copy 2020, Все права защищены
+					</span>
+					<span class="platform">
+						Сделано в рамках курса учебной платформы 
+						<a href="https://annblok.ru/" target="_blank">Annblok</a>
+					</span>
 				</div>
 			</div>
 		</div>
