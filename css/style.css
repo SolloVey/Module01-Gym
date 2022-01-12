@@ -1035,6 +1035,29 @@ h3 {
 	top: 0;
 	left: 0;
 	z-index: 555;
+	opacity: 0;
+	visibility: hidden;
+	/*overflow-y: auto;
+	overflow-x: hidden;*/
+	transition: all .8s ease 0s;
+}
+
+.popup:target {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup:target .popup_content {
+	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+	opacity: 1;
+}
+
+.popup_area {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 
 .popup_body {
@@ -1056,6 +1079,9 @@ h3 {
 	padding-bottom: 80px;
 	background: #F3F3F3;
 	position: relative;
+	transition: all .8s ease 0s;
+	opacity: 0;
+	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 
 .popup_title {
