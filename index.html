@@ -321,16 +321,28 @@
 	<!-- <div id="popup" class="popup">
 		<div class="popup_body">
 			<div class="popup_content">
-				<a href="#" class="popup_close"></a>
+				<a href="#" class="popup_close">
+					<div class="popup_close_photo"></div>
+				</a>
 				<div class="popup_content_wrapper">
 					<div class="popup_title">
-						<h1>Заявка на участие <br>&laquoМарафон выносливости&raquo</h1>
+						<h1>Заявка на участие &laquoМарафон&nbspвыносливости&raquo</h1>
 						<span>
-							Заполните все поля, и мы пришлем <br>информацию в ближайшее время
+							Заполните все поля, и мы пришлем информацию в ближайшее время
 						</span>	
 					</div>
 					<div class="popup_form">
-						
+						<form action="#" class="js-form" novalidate>
+							<div class="form-group">
+								<input type="email" class="js-mail js-input js-mail-form " name="user_email" placeholder="Ваш e-mail" required>
+							</div>
+							<div class="form-group">
+								<input type="tel" class="js-phone js-input" name="user_phone" placeholder="Ваш номер телефона">
+							<button class="form-btn" type="submit">
+							Отправить
+							</button>
+							</div>
+						</form>
 					</div>	
 				</div>
 			</div>
