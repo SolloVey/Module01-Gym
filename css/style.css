@@ -6,7 +6,7 @@
 /*HEADER*/
 
 .container {
-	width: 1141px;
+	max-width: 1141px;
 	margin: 0 auto;
 	margin-top: 50px;
     padding-left: 15px;
@@ -114,49 +114,18 @@
 }
 
 .banner {
-	max-width: 1280px;
 	display: flex;
-	justify-content: space-between;
-	margin: 0 280px auto;
-	background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.1) 100%);
-	padding-left: 15px;
-	padding-right: 15px;
-	/*position: relative;*/
-}
-/*Для баннер поз релатив
-.visual img {
-    position: absolute;
-    right: -94px;
-    width: 50.7vw;
-    top: 41px;
-}*/ 
-
-.visual {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-basis: 83%;
-}
-
-.visual-first-line {
 	position: relative;
-	right: 145px;
-	background-color: #FEFCFE;
-	width: 652px;
+	width: 59.3vw;
 	height: 100%;
+	margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.visual-second-line {
-	background-color: #FEFCFE;
-	width: 20px;
-	height: 100%;
-}
-
-.content {
-	position: relative;
-	left: 227px;
-	flex: 0 0 640px;
+.banner-content {
 	color: #2B3541;
+	max-width: 635px;
 	padding-top: 192px;
 }
 
@@ -235,16 +204,36 @@
 	transform: scale(1.1);
 }
 
-.visual img {
+.visual {
+	display: flex;
+    gap: 20px;
+    max-width: 790px;
+    width: 50vw;
+    position: absolute;
+    right: -60px;
+    height: 100%;
+    z-index: -10;
+}
+
+.visual-first-line {
+	background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, .45) 145.23%);
+	opacity: .2;
+	height: 100%;
+	flex-basis: 70%;
+}
+
+.visual-second-line {
+	background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    opacity: .2;
+    height: 100%;
+    flex-basis: 30%
+}
+
+.visual-image {
 	position: absolute;
-	right: 210px;
-	/*right: 10.4%;*/
-	width: 50.8vw;
-	/*width: 975px;*/
-	/*width: 51.5%;*/
-	top: 165px;
-	/*top: 163px;*/ /*Для процентного соотношения*/
-	/*top: 34.1%;*/
+	bottom: 0;
+	right: -100px;
+	width: 124%;
 }
 
 /*БЛИЖАЙШИЕ СОБЫТИЯ*/
@@ -968,7 +957,7 @@ h3 {
 
 .footer-network-social {
 	display: flex;
-	gap: 25px;
+	gap: 32px;
 }
 
 .footer-network-in {
@@ -1037,8 +1026,6 @@ h3 {
 	z-index: 555;
 	opacity: 0;
 	visibility: hidden;
-	/*overflow-y: auto;
-	overflow-x: hidden;*/
 	transition: all .8s ease 0s;
 }
 
