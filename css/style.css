@@ -6,9 +6,9 @@
 /*HEADER*/
 
 .container {
-	max-width: 1141px;
+	max-width: 59.4vw;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 35px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -24,6 +24,9 @@
 	width: 97px;
 	height: 30px;
 	background-image: url(../img/logo.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header-item {
@@ -38,7 +41,7 @@
 	color: #2B3541;
 	gap: 58px;
 	font-size: 18px;
-	scroll-behavior: smooth;
+	/*scroll-behavior: smooth;*/
 }
 
 .header-nav li {
@@ -84,6 +87,9 @@
 	width: 30px;
 	height: 30px;
 	background-image: url(../img/in.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 	transition: 0.5s;
 	opacity: 0.8;
 }
@@ -97,6 +103,9 @@
 	width: 30px;
 	height: 30px;
 	background-image: url(../img/fb.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 	transition: 0.5s;
 	opacity: 0.8;
 }
@@ -116,7 +125,7 @@
 .banner {
 	display: flex;
 	position: relative;
-	width: 59.3vw;
+	max-width: 59.4vw;
 	height: 100%;
 	margin: 0 auto;
     padding-left: 15px;
@@ -197,6 +206,9 @@
 	width: 52px;
 	height: 55px;
 	background-image: url(../img/arrow.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 	transition: 0.3s;
 }
 
@@ -211,7 +223,7 @@
     width: 50vw;
     position: absolute;
     right: -60px;
-    height: 100%;
+    height: 44vw;
     z-index: -10;
 }
 
@@ -233,7 +245,7 @@
 	position: absolute;
 	bottom: 0;
 	right: -100px;
-	width: 124%;
+	width: 51vw;
 }
 
 /*БЛИЖАЙШИЕ СОБЫТИЯ*/
@@ -245,7 +257,7 @@
 }
 
 .main-container {
-    max-width: 1143px;
+    max-width: 59.4vw;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -257,6 +269,8 @@ h2  {
 	font-size: 40px;
 	line-height: 125%;
 	margin-bottom: 39px;
+	position: relative;
+    z-index: 1;
 }
 
 h3 {
@@ -272,7 +286,7 @@ h3 {
 }
 
 .wraper-events {
-	width: 100%;
+	max-width: 100%;
 	height: 600px;
 }
 
@@ -384,8 +398,8 @@ h3 {
 	display: block;
 	position: absolute;
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.1) 100%);
-	width: 100%;
-	height: 600px;
+	max-width: 100%;
+	height: 100%;
     opacity: 0;
     transition: .2s linear;
 }
@@ -613,15 +627,13 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	position: relative;
-	z-index: 1;
 }
 
 .mailing-body h2::before {
 	position: absolute;
     content: "";
-    top: 15px;
-    left: 242px;
+    top: -20px;
+    left: -35px;
     height: 53px;
     width: 53px;
     background-color: #FBF138;
@@ -713,12 +725,18 @@ h3 {
 	width: 18px;
 	height: 18px;
 	background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='16' height='16' stroke='%232B3541' stroke-width='2'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 	margin-left: -22px;
 	transition: .2s ease;
 }
 
 .real-checkbox:checked + .custom-checkbox {
 	background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='18' height='18' fill='%232B3541'/%3E%3Cpath d='M1 9.51047L6.4791 15L17 4.48955L15.4896 3L6.4791 11.9999L2.48953 8.01042L1 9.51047Z' fill='white'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 	transition: .2s ease;
 	border: none;
 }
@@ -750,7 +768,7 @@ h3 {
 }
 
 .company-description {
-	width: 483px;
+	max-width: 483px;
 }
 
 .company-description h2 {
@@ -860,7 +878,7 @@ h3 {
 /*FOOTER*/
 
 .footer-container {
-	width: 100%;
+	max-width: 100%;
 	background: #F3F3F3;
 	padding-top: 40px;
 }
@@ -1062,8 +1080,8 @@ h3 {
 }
 
 .popup_content {
-	max-width: 600px;
-	padding-bottom: 80px;
+	max-width: 31.3vw;
+	padding-bottom: 4.2vw;
 	background: #F3F3F3;
 	position: relative;
 	transition: all .8s ease 0s;
@@ -1072,11 +1090,9 @@ h3 {
 }
 
 .popup_title {
-	position: relative;
 	text-align: center;
 	color: #2B3541;
-	padding: 42px 100px;
-	z-index: 111;
+	padding: 2.2vw 4.2vw;
 }
 .popup_close {
 	width: 20px;
@@ -1095,15 +1111,17 @@ h3 {
 
 .popup_title h1 {
 	font-weight: 700;
-	font-size: 28px;
+	font-size: 1.75em;
 	line-height: 125%;
+	position: relative;
+	z-index: 111;
 }
 
 .popup_title h1::before {
 	position: absolute;
     content: "";
-    top: 30px;
-    left: 124px;
+    top: -30px;
+    left: 25px;
     height: 53px;
     width: 53px;
     background-color: #FBF138;
@@ -1127,28 +1145,28 @@ h3 {
 }
 
 .js-mail-form {
-	width: 500px;
-	height: 65px;
-	background: #FFFFFF;
-	box-sizing: border-box;
-	border: 1px solid #F3F3F3;
-	outline: none;
-	margin-right: 15px;
-    margin-left: 15px;
-    padding-left: 19px;
-	cursor: pointer;
+    width: 26vw;
+    height: 3.4vw;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #F3F3F3;
+    outline: none;
+    margin-right: 0.8vw;
+    margin-left: 0.8vw;
+    padding-left: 1vw;
+    cursor: pointer;
 }
 
 .js-phone {
-	width: 500px;
-	height: 65px;
+	width: 26vw;
+	height: 3.4vw;
 	background: #FFFFFF;
 	box-sizing: border-box;
 	border: 1px solid #F3F3F3;
 	outline: none;
-	margin-right: 15px;
-    margin-left: 15px;
-    padding-left: 19px;
+	margin-right: 0.8vw;
+    margin-left: 0.8vw;
+    padding-left: 1vw;
 	cursor: pointer;
 }
 
@@ -1165,8 +1183,8 @@ h3 {
 }
 
 .form-btn {
-	width: 500px;
-	height: 65px;
+	width: 26vw;
+	height: 3.4vw;
 	margin-top: 40px;
 	background: #FBF138;
 	box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
@@ -1192,6 +1210,396 @@ h3 {
 	background: #2B3541;
 	color: #FBF138;
 	transition: 0.2s;
+}
+
+/*АДАПТАЦИЯ*/
+
+@media (max-width: 1761px) {
+
+	.header-item {
+	    flex-basis: 65%;
+	}
+
+	.footer-item {
+	    flex-basis: 65%;
+	}
+
+	.banner-content {
+	    padding-top: 180px;
+	}
+
+	.content-title {
+	    font-size: 40px;
+	}
+
+	.content-wrap {
+	    margin-left: 60px;
+	}
+
+	.arrow-training {
+	    margin-top: 167px;
+	}
+
+	.visual-image {
+	    right: -25px;
+	}
+
+	.popup_title {
+	    padding: 2.2vw 3.2vw;
+	}
+}
+
+@media (max-width: 1681px) {
+
+	.arrow-training {
+	    margin-top: 130px;
+	}
+
+	.visual-image {
+	    right: 12px;
+	}
+
+	.popup_title {
+	    padding: 2.2vw 3.2vw;
+	}
+}
+
+@media (max-width: 1614px) {
+
+	.header-item {
+	    flex-basis: 75%;
+	}
+
+	.footer-item {
+	    flex-basis: 60%;
+	}
+
+	.footer-nav {
+	    gap: 65px;
+	}
+
+	.arrow-training {
+	    margin-top: 90px;
+	}
+
+	.visual-image {
+	    right: 50px;
+	}
+
+	.popup_title {
+	    padding: 2.2vw 2.2vw;
+	}
+}
+
+@media (max-width: 1537px) {
+
+	.container,
+	.banner,
+	.main-container {
+	    max-width: 75.4vw;
+	}
+
+	.header-item {
+	    flex-basis: 65%;
+	}
+
+	.banner-content {
+	    padding-top: 155px;
+	}
+
+	.visual {
+	    right: 10px;
+	}
+
+	.visual-image {
+	    right: 55px;
+	}
+
+	.footer-item {
+	    flex-basis: 55%;
+	}
+
+	.popup_title {
+    	padding: 3.2vw 2.2vw;
+	}
+
+	.popup_title h1 {
+	    font-size: 1.65em;
+	}
+}
+
+@media (max-width: 1441px) {
+
+	.banner-content {
+	    padding-top: 120px;
+	}
+
+	.content-title-number {
+	    padding-top: 30px;
+	}
+
+	.popup_title {
+	    padding: 2.2vw 1.2vw;
+	}
+}
+
+@media (max-width: 1367px) {
+
+	.header-item {
+	    flex-basis: 70%;
+	}
+
+	.content-title {
+	    font-size: 36px;
+	}
+
+	.banner-content {
+	    padding-top: 110px;
+	}
+
+	.arrow-training {
+	    margin-top: 80px;
+	}
+
+	.visual {
+	    width: 55vw;
+	}
+
+	.visual-image {
+	    right: 120px;
+	}
+
+	.footer-item {
+	    flex-basis: 60%;
+	}
+
+	.popup_content {
+	    max-width: 33.3vw;
+	}
+
+	.popup_title {
+	    padding: 3.2vw 2.2vw;
+	}
+
+	.popup_title h1 {
+	    font-size: 1.6em;
+	}
+}
+
+@media (max-width: 1281px) {
+
+	.header-item {
+	    flex-basis: 65%;
+	}
+
+	.logo-image {
+	    width: 85px;
+	    height: 26px;
+	}
+
+	.network-in {
+	    width: 25px;
+	    height: 25px;
+	}
+
+	.network-fb {
+	    width: 25px;
+	    height: 25px;
+	}
+
+	.header-nav {
+	    font-size: 16px;
+	}
+
+	.banner-content {
+	    padding-top: 90px;
+	    max-width: 400px;
+	}
+
+	.content-title {
+	    font-size: 30px;
+	}
+
+	.content-text {
+	    font-size: 16px;
+	    margin-top: 30px;
+	}
+
+	.content-link {
+	    font-size: 12px;
+	    padding: 15px 25px;
+	}
+
+	.arrow-training {
+	    margin-top: 100px;
+	    width: 45px;
+    	height: 47px;
+	}
+
+	.arrow {
+	    width: 45px;
+	    height: 47px;
+	}
+
+	.visual-image {
+	    right: 110px;
+	}
+
+	.wrap {
+	    margin-bottom: 80px;
+	}
+
+	.mailing-body h2::before {
+	    top: -15px;
+	    left: -30px;
+	    height: 45px;
+	    width: 45px;
+	}
+
+	h2 {
+	    font-size: 34px;
+	}
+
+	.menu-events-one,
+	.menu-events-two,
+	.menu-events-three {
+	    height: 42vw;
+	}
+
+	.wraper-events {
+	    height: 42vw;
+	}
+
+	.date-event {
+	    font-size: 16px;
+	}
+
+	.menu-events-info > h3 {
+		font-size: 21px;
+	}
+
+	.menu-events-two .menu-events-info > h3 {
+	    margin-bottom: 43px;
+	}
+
+	.menu-events-info-btn {
+	    padding: 12px 0px 12px;
+	    width: 190px;
+	    font-size: 14px;
+	}
+
+	.menu-events-btn {
+	    width: 9vw;
+	    height: 3.4vw;
+	}
+
+	.menu-events-btn span {
+	    font-size: 16px;
+	}
+
+	.main-body {
+	    margin-bottom: 90px;
+	}
+
+	.date-timetable {
+	    font-size: 16px;
+	}
+
+	.foto-timetable-body, 
+	.foto-timetable-body img {
+	    width: 55px;
+	    height: 55px;
+	}
+
+	.description {
+	    font-size: 16px;
+	}
+
+	.js-mail {
+	    width: 350px;
+	    height: 55px;
+	}
+
+	.js-phone {
+		width: 350px;
+	    height: 55px;
+	}
+
+	.your-mail-btn {
+	    width: 200px;
+	    height: 55px;
+	    font-size: 14px;
+	}
+
+	.checkbox {
+	    margin-left: 14px;
+	}
+
+	.real-checkbox {
+	    width: 15px;
+	    height: 15px;
+	}
+
+	.custom-checkbox {
+	    width: 15px;
+	    height: 15px;
+	}
+
+	.mailing {
+		margin-top: 150px;
+	    padding-top: 35px;
+	    padding-bottom: 60px;
+	}
+
+	.about-company {
+	    margin-top: 150px;
+	    margin-bottom: 60px;
+	}
+
+	.company-description > p {
+	    font-size: 16px;
+	}
+
+	.sign-up-link {
+	    font-size: 14px;
+	    padding: 18px 48px;
+	}
+
+	.promo-foto {
+	    width: 450px;
+	    height: 280px;
+	}
+
+	.advantages-company-item h3 {
+	    font-size: 16px;
+	}
+
+	.advantages-company-item p {
+	    font-size: 14px;
+	}
+
+	.advantages-company {
+	    margin-bottom: 90px;
+	}
+
+	.footer-mail {
+	    font-size: 14px;
+	}
+
+	.footer-network-in {
+	    width: 25px;
+	    height: 25px;
+	}
+
+	.footer-network-fb {
+	    width: 25px;
+	    height: 25px;
+	}
+
+	.copyright-info {
+	    font-size: 12px;
+	    padding-top: 18px;
+	}
 }
 
 
