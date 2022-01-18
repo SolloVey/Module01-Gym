@@ -19,6 +19,9 @@
 					<a href="index.html">
 						<div class="logo"></div>
 					</a>
+					<div class="burger-nav">
+						<button class="burger" onclick="openModal()"></button>
+					</div>
 					<nav class="nav-item">
 						<ul class="header-nav">
 							<li><a href="#mainBody" class="trans">Мероприятия</a></li>
@@ -419,6 +422,31 @@
 			</div>
 		</div>
 	</div>
+	<!-- <div class="modal"> -->
+		<div id="modal" class="modal-body">
+			<div class="modal-main-container">
+				<div class="modal-header">
+					<a href="index.html">
+						<div class="modal-logo"></div>
+					</a>
+					<button class="modal-close-photo" onclick="closeModal()"></button>
+				</div>	
+				<ul class="header-nav">
+					<li><a href="#mainBody" class="trans">Мероприятия</a></li>
+					<li><a href="#timetable" class="trans">Расписание</a></li>
+					<li><a href="#about" class="trans">О компании</a></li>
+				</ul>
+				<div class="modal-network-social">
+					<a href="https://instagram.com" target="_blank">
+						<div class="modal-network-in"></div>
+					</a>
+					<a href="https://facebook.com" target="_blank">
+						<div class="modal-network-fb"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	<!-- </div> -->
 	<script src="script/app.js"></script>
 </body>
 </html>
