@@ -1,4 +1,4 @@
-﻿body {
+body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #FEFCFE;
 }
@@ -14,7 +14,6 @@
 }
 
 .header {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1802,7 +1801,7 @@ h3 {
 	}
 
 	.footer-nav {
-	    gap: 55px;
+	    gap: 50px;
 	}
 
 	.footer-network {
@@ -2151,7 +2150,7 @@ h3 {
 @media (max-width:992px) {
 
 	.header-nav {
-	    gap: 57px;
+	    gap: 40px;
 	}
 
 	.footer-nav {
