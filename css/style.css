@@ -2488,6 +2488,10 @@ h3 {
 
 @media (max-width:768px) {
 
+	.container {
+	    margin-top: 30px;
+	}
+
 	.container, 
 	.banner, 
 	.main-container {
@@ -2573,21 +2577,21 @@ h3 {
 	}
 
 	.visual {
-	    height: 54.6vw;
-	    width: 45.5vw
+	    height: 55.9vw;
+    	width: 46.5vw;
 	}
 
 	.visual-image {
-	    width: 50vw;
-	    right: 3px;
+	    width: 51vw;
+    	right: 3px;
 	}
 
 	.visual-first-line {
-	    flex-basis: 65%;
+	    flex-basis: 56%;
 	}
 
 	.visual-second-line {
-	    flex-basis: 50%;
+	    flex-basis: 45%;
 	}
 
 	h2 {
@@ -2950,76 +2954,82 @@ h3 {
 	.platform a {
 	    font-size: 10px;
 	}
+
+	.modal-main-container {
+	    max-width: 100%;
+	    padding-top: 30px;
+	}
+
+	.modal-logo {
+	    width: 78px;
+	    height: 24px;
+	}
+
+	#modal .header-nav {
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	}
 }
 
+@media (max-width:736px) {
+
+	.content-title {
+	    font-size: 24px;
+	}
+
+	.content-title-number {
+	    font-size: 24px;
+	    padding-top: 30px;
+	}
+
+	.content-link {
+	    font-size: 14px;
+	    padding: 18px 30px;
+	}
+
+	.content-text {
+	    margin-bottom: 50px;
+	}
+
+	.arrow-training {
+	    margin-top: 50px;
+	}
+
+	.menu-events-btn {
+	    width: 12vw;
+	    height: 4vw;
+	}
+
+	.menu-events-mobile-btn {
+	    width: 4vw;
+	    height: 4vw;
+	}
+
+	.menu-events-three 
+	.menu-events-info > h3 {
+	    padding-right: 500px;
+	}
+
+	.js-mail, .js-phone {
+	    width: 52vw;
+	    height: 50px;
+	}
+
+	.form-btn {
+	    width: 52vw;
+	}
+
+	.popup_content {
+	    max-width: 57vw;
+	}
+
+	.popup_title h1::before {
+	    left: 40px;
+	}
 
 
 
 /*QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
-
-	
-
-	
-
-
-	
-
-
-
-
-
-@media (max-width:736px) {
-
-	.content-link {
-	    padding: 12px 18px;
-	    font-size: 10px;
-	}
-
-	.menu-events-btn span {
-	    padding: 4px 10px;
-	}
-
-	.popup_content {
-	    max-width: 60vw;
-	}
-
-	.popup_title h1::before {
-	    left: 0px;
-	}
-
-	.form-btn {
-	    width: 45vw;
-	}
-
-	.container-one {
-	    grid-template-rows: 170px 353px;
-	}
-
-	.container-two {
-	    grid-template-rows: 322px 201px;
-	}
-
-	.container-tree {
-	    grid-template-rows: 229px 294px;
-	}
-
-	.sign-up-link {
-	    padding: 14px 50px;
-	}
-
-	.advantages-company {
-	    display: grid;
-	    grid-template-columns: 1fr 1fr;
-	    grid-template-rows: 1fr 1fr;
-	    column-gap: 160px;
-	    row-gap: 0px;
-	}
-
-	.footer-network-in, 
-	.footer-network-fb {
-	    width: 21px;
-	    height: 21px;
-	}
 }
 
 @media (max-width:667px) {
