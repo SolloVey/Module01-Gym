@@ -2707,7 +2707,7 @@ h3 {
 	.day,
 	.day-active {
     	min-width: 46.44vw;
-	    height: 42.3vw;
+	    max-height: 42.3vw;
 	}
 
 	.day {
@@ -3027,6 +3027,32 @@ h3 {
 	    left: 40px;
 	}
 
+	.your-mail-btn {
+	    width: 52vw;
+	}
+
+	.checkbox {
+	    margin-left: -96px;
+	}
+
+	.company-description h2 {
+	    margin-bottom: 28px;
+	}
+
+	.company-description > p {
+	    font-size: 14px;
+	    margin-bottom: 20px;
+	}
+
+	.company-description {
+	    max-width: 260px;
+	}
+
+	.sign-up-link {
+	    padding: 15px 61px;
+	    font-size: 14px;
+	}
+
 
 
 /*QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
@@ -3052,19 +3078,19 @@ h3 {
 	    margin-bottom: 20px;
 	}
 
-	.banner {
+	/*.banner {
 	    flex-direction: column;
 	    padding-left: 10px;
 	    padding-right: 10px;
 	    gap: 70px;
-	}
+	}*/
 
 	.banner-content {
 	    max-width: 500px;
 	}
 
 	.content-title {
-	    font-size: 28px;
+	    font-size: 24px;
 	}
 
 	.content-title-number {
@@ -3075,12 +3101,12 @@ h3 {
 
 	.content-text {
 	    font-size: 16px;
-	    margin-bottom: 40px;
+	    margin-bottom: 100px;
 	}
 
 	.content-link {
-	    padding: 14px 40px;
-	    font-size: 14px;
+	    padding: 25px 55px;
+    	font-size: 16px;
 	}
 
 	.visual {
@@ -3094,12 +3120,16 @@ h3 {
 	}
 
 	.visual-second-line {
-	    flex-basis: 23%;
+	    flex-basis: 30%;
 	}
 
 	.visual-image {
-	    right: 50px;
-	    width: 65vw;
+	    right: -1px;
+    	width: 50vw;
+	}
+
+	.arrow-training {
+	    display: none;
 	}
 
 	.main-container {
@@ -3137,13 +3167,18 @@ h3 {
 	}
 
 	.date-event {
-	    padding: 0px 20px;
+	    padding: 0px 0px;
 	    font-size: 18px;
 	}
 
 	.menu-events-info > h3 {
 	    font-size:20px;
-	    padding: 20px 20px;
+	    padding: 13px 174px 0px 0px;
+	}
+
+	.menu-events-three 
+	.menu-events-info > h3 {
+	    padding-right: 450px;
 	}
 
 	.menu-events-btn {
@@ -3229,9 +3264,30 @@ h3 {
 	    margin-left: 100px;
 	}
 
-	.container-one {
-	    grid-template-rows: 1fr 2fr;
+	.container-one, 
+	.container-two, 
+	.container-tree {
+	    display: grid;
 	}
+
+	.container-one {
+		grid-template-rows: 1fr 2fr;
+	}
+
+	.container-one .day, .day-active {
+	    min-width: 46.44vw;
+	     max-height: 100%; 
+	}
+
+	.container-two,
+	.container-tree {
+	    grid-template-rows: 1fr 1fr;
+	}
+
+	/*.container-one > .day-active {
+	    min-width: 46.44vw;
+	    height: 42.3vw;
+	}*/
 
 	.foto-timetable-body, 
 	.foto-timetable-body img {
@@ -3247,9 +3303,9 @@ h3 {
 	    margin-right: 25px;
 	}
 
-	.container-two {
+	/*.container-two {
 	    grid-template-rows: 1fr 1fr;
-	}
+	}*/
 
 	.foto-timetable-bottle, 
 	.foto-timetable-bottle img {
@@ -3265,10 +3321,10 @@ h3 {
 	    margin-right: 26px;
 	}
 
-	.container-tree {
+	/*.container-tree {
 	    grid-template-rows: 1fr 1fr;
 	}
-
+*/
 	.foto-timetable-dumbbell, 
 	.foto-timetable-dumbbell img {
 	    width: 83px;
