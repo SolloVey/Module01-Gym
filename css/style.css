@@ -3052,10 +3052,6 @@ h3 {
 	    padding: 15px 61px;
 	    font-size: 14px;
 	}
-
-
-
-/*QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
 }
 
 @media (max-width:667px) {
@@ -3077,13 +3073,6 @@ h3 {
 	.wrap {
 	    margin-bottom: 20px;
 	}
-
-	/*.banner {
-	    flex-direction: column;
-	    padding-left: 10px;
-	    padding-right: 10px;
-	    gap: 70px;
-	}*/
 
 	.banner-content {
 	    max-width: 500px;
@@ -3146,21 +3135,6 @@ h3 {
 	.menu-events-three {
 	    grid-column: span 2;	
 	}
-
-	/*.menu-events-one {
-		background-image: url(../img/events/event1-mobile.png);
-		height: 389px;
-	} 
-
-	.menu-events-two {
-		background-image: url(../img/events/event2-mobile.png);
-	    height: 389px;
-	}
-
-	.menu-events-three {
-		background-image: url(../img/events/event3-mobile.png);
-		height: 362px;
-	}*/
 
 	.menu-events-info {
 	    padding-top: 20px;
@@ -3262,6 +3236,7 @@ h3 {
 	.description {
 	    font-size: 16px;
 	    margin-left: 100px;
+	    max-width: 330px;
 	}
 
 	.container-one, 
@@ -3284,11 +3259,6 @@ h3 {
 	    grid-template-rows: 1fr 1fr;
 	}
 
-	/*.container-one > .day-active {
-	    min-width: 46.44vw;
-	    height: 42.3vw;
-	}*/
-
 	.foto-timetable-body, 
 	.foto-timetable-body img {
 	    width: 75px;
@@ -3303,9 +3273,9 @@ h3 {
 	    margin-right: 25px;
 	}
 
-	/*.container-two {
-	    grid-template-rows: 1fr 1fr;
-	}*/
+	.day-active > .description-timetable > .title-timetable {
+	    margin-bottom: 90px;
+	}
 
 	.foto-timetable-bottle, 
 	.foto-timetable-bottle img {
@@ -3321,10 +3291,6 @@ h3 {
 	    margin-right: 26px;
 	}
 
-	/*.container-tree {
-	    grid-template-rows: 1fr 1fr;
-	}
-*/
 	.foto-timetable-dumbbell, 
 	.foto-timetable-dumbbell img {
 	    width: 83px;
@@ -3339,33 +3305,24 @@ h3 {
 	    margin-right: 32px;
 	}
 
-	/*.mail-form .js-form {
-	    display: flex;
-	    flex-direction: column;
-	    align-items: start;
-	}*/
-
 	.mail-form .js-mail {
 	    margin-right: 0px;
     	margin-left: 0px;
-    	width: 390px;
+    	width: 340px;
+    	height: 65px;
 	}
 
 	.checkbox {
 		margin-left: 0px;
 		margin-top: 10px;
 		margin-bottom: 40px;
+		align-self: flex-start;
 	}
-
-	/*.your-mail-btn {
-	    order: 1;
-	    width: 390px;
-	}*/
 
 	.about-company {
 	    flex-direction: column;
 	    margin-top: 70px;
-	    margin-bottom: 80px;
+	    margin-bottom: 38px;
 	}
 
 	.company-description {
@@ -3398,16 +3355,17 @@ h3 {
 	}
 
 	.sign-up-link {
-	    padding: 14px 65px;
+	    padding: 20px 112px;
+	    font-size: 16px;
 	}
 
 	.promo-foto {
 	    width: 100%;
+	    height: 55vw;
 	}
 
 	.footer-container {
-	    background: #FEFCFE;
-	    padding-top: 0px;
+	    padding-top: 42px;
 	}
 
 	.footer {
