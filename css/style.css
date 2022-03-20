@@ -806,7 +806,6 @@ h3 {
 	box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
 	background: #2B3541;
 	color: #FBF138;
-	transform: scale(1.2);
 }
 
 .sign-up-link:focus {
@@ -895,13 +894,6 @@ h3 {
     justify-content: space-between;
     flex-basis: 55%;
 }
-
-/*.footer-nav {
-	display: flex;
-	color: #2B3541;
-	gap: 58px;
-	font-size: 18px;
-}*/
 
 .footer-nav li {
 	list-style-type: none;
@@ -1327,14 +1319,6 @@ h3 {
 	transform: scale(1.3);
 	opacity: 1;
 }
-
-
-
-
-
-
-
-/*АДАПТАЦИЯ*/
 
 @media (min-width: 834px) {
 
@@ -2313,10 +2297,6 @@ h3 {
 	    height: 6.4vw;
 	}
 
-
-
-	/*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
 	.container-one {
 	    grid-template-rows: 180px 363px;
 	}
@@ -3010,7 +2990,8 @@ h3 {
 	    padding-right: 500px;
 	}
 
-	.js-mail, .js-phone {
+	.js-mail, 
+	.js-phone {
 	    width: 52vw;
 	    height: 50px;
 	}
@@ -3418,25 +3399,37 @@ h3 {
 
 @media (max-width:601px) {
 
+	.content-text {
+	    margin-bottom: 32px;
+	}
+
+	.content-link {
+	    padding: 25px 40px;
+	}
+
+	.visual-image {
+	    right: -17px;
+	}
+
 	.menu-events-btn span {
 	    padding: 5px 20px;
 	}
 
-	.popup_content {
-	    max-width: 66vw;
+	.menu-events-info > h3 {
+	    padding: 13px 90px 0px 0px;
+	}
+
+	.menu-events-three
+	.menu-events-info > h3 {
+	    padding-right: 360px;
+	}
+
+	.popup_title {
+	    padding: 5.2vw 1.2vw;
 	}
 
 	.popup_title h1::before {
-	    left: -10px;
-	}
-
-	.js-mail, 
-	.js-phone {
-	    width: 355px;
-	}
-
-	.form-btn {
-	    width: 59vw;
+	    left: 30px;
 	}
 
 	.footer-nav {
@@ -3445,6 +3438,49 @@ h3 {
 }
 
 @media (max-width:568px) {
+
+	.banner {
+	    flex-direction: column;
+	}
+
+	.banner-content {
+	    max-width: 400px;
+	}
+
+	.content-title {
+	    font-size: 26px;
+	}
+
+	.content-title-number {
+	    padding-top: 44px;
+	}
+
+	.namber-tran {
+	    padding-left: 17px;
+	    letter-spacing: 0.001em;
+	}
+
+	.content-link {
+	    padding: 20px 74px 26px;
+	}
+
+	.content-text {
+	    margin-bottom: 58px;
+	}
+
+	.visual {
+		margin-top: 60px;
+	    right: 0px;
+	}
+
+	.visual-image {
+	    right: 60px;
+	    width: 60vw;
+	}
+
+	.wrap {
+	    margin-bottom: 40px;
+	}
 
 	.menu-events-one,
 	.menu-events-two {
@@ -3460,12 +3496,21 @@ h3 {
 	    font-size: 14px;
 	}
 
+	.menu-events-three 
+	.menu-events-info > h3 {
+	    padding-right: 280px;
+	}
+
+	.popup_title {
+	    padding: 5.2vw 4.2vw;
+	}
+
 	.popup_content {
-	    max-width: 69vw;
+	    max-width: 76vw;
 	}
 
 	.popup_title h1::before {
-	    left: 50px;
+	    left: 35px;
 	}
 
 	.js-mail, 
@@ -3476,6 +3521,10 @@ h3 {
 
 	.form-btn {
 	    height: 8.4vw;
+	}
+
+	.your-mail-btn {
+	    width: 340px;
 	}
 
 	.head-timetable span {
@@ -3549,10 +3598,9 @@ h3 {
 	    height: 18px;
 	}
 
-	/*.your-mail-btn {
-	    height: 65px;
-	    font-size: 16px;
-	}*/
+	.about-company {
+	    margin-top: 80px;
+	}
 
 	.footer-nav {
 	    gap: 15vw;
@@ -3592,32 +3640,17 @@ h3 {
 		opacity: 1;
 	}
 
-	.wrap {
-	    margin-top: 0px;
-	}
-
-	.content-title {
-	    font-size: 26px;
-	    margin-top: 10px;
-	    margin-bottom: 16px;
-	}
-
 	.content-wrap {
 	    margin-left: 0px;
 	}
 
-	.content-link {
-	    display: block;
-	    padding: 17px 74px;
-	    font-size: 16px;
+	.visual {
+	    height: 65vw;
 	}
 
-	.banner {
-	    gap: 40px;
-	}
-
-	.wrap {
-	    margin-bottom: 60px;
+	.visual-image {
+	    right: 70px;
+	    width: 70vw;
 	}
 
 	h2 {
@@ -3633,12 +3666,16 @@ h3 {
 	    height: 336px;
 	}
 
+	.menu-events-three 
+	.menu-events-info > h3 {
+	    padding-right: 260px;
+	}
+
 	.date-event {
 	    font-size: 14px;
 	}
 
 	.menu-events-info > h3 {
-		padding: 20px 16px;
 	    font-size: 16px;
 	}
 
@@ -3657,67 +3694,40 @@ h3 {
 	    height: 30px;
 	}
 
-	.menu-events-three .menu-events-name {
-	    margin-right: 195px;
+	.menu-events-three {
+	    background-image: url(../img/events/event-mobile3.png);
 	}
 
 	.popup_content {
-	    max-width: 78vw;
+	    max-width: 85vw;
 	}
 
 	.js-mail, 
 	.js-phone, 
 	.form-btn {
 	    width: 70vw;
+	    height: 50px;
 	}
 
 	.popup_title h1::before {
-	    left: 40px;
+	    left: 30px;
 	}
 
 	.main-body {
 	    margin-bottom: 40px;
 	}
 
-	.foto-timetable-body, 
-	.foto-timetable-body img {
-	    width: 39px;
-	    height: 39px;
-	}
-
-	.foto-timetable-jump, 
-	.foto-timetable-jump img {
-	    width: 34px;
-	    height: 53px;
-	}
-
-	.foto-timetable-bottle, 
-	.foto-timetable-bottle img {
-	    width: 23px;
-	    height: 45px;
-	}
-
-	.foto-timetable-heart, 
-	.foto-timetable-heart img {
-	    width: 39px;
-	    height: 37px;
-	}
-
-	.foto-timetable-dumbbell, 
-	.foto-timetable-dumbbell img {
-	    width: 48px;
-	    height: 25px;
-	}
-
-	.foto-timetable-weight, 
-	.foto-timetable-weight img {
-	    width: 35px;
-	    height: 40px;
+	.day-active > .description-timetable > .title-timetable {
+	    margin-bottom: 75px;
 	}
 
 	.description {
 	    font-size: 12px;
 	    margin-left: 65px;
+	}
+
+	.description-timetable {
+	    padding-right: 40px;
 	}
 
 	.mailing {
@@ -3774,14 +3784,12 @@ h3 {
 	}
 
 	.visual {
-	    padding-left: 10px;
-	    padding-right: 10px;
 	    width: 100%;
 	    height: 310px;
 	}
 
 	.visual-second-line {
-	    flex-basis: 32%;
+	    flex-basis: 37%;
 	}
 
 	.visual-image {
@@ -3790,57 +3798,99 @@ h3 {
 	}
 
 	.popup_content {
-	    max-width: 85vw;
+	    max-width: 91vw;
+	}
+
+	.js-mail, 
+	.js-phone, 
+	.form-btn {
+	    width: 85vw;
+	    height: 50px;
 	}
 
 	.popup_title h1::before {
 	    left: 30px;
 	}
 
-	.menu-events-three .menu-events-name {
-	    margin-right: 230px;
+	.menu-events-info > h3 {
+	    padding: 13px 50px 0px 0px;
+	}
+
+	.menu-events-three 
+	.menu-events-info > h3 {
+	    padding-right: 240px;
+	}
+
+	.description-timetable {
+	    padding-right: 0px;
 	}
 
 	.mailing-body h2::before {
-	    left: 60px;
+	    left: 50px;
 	}
 
 	.footer-nav {
-	    gap: 15vw;
+	    gap: 14vw;
 	}
 }
 
 @media (max-width:390px) {
 
+	.menu-events-one {
+	    background-image: url(../img/events/event-mobile1.png);
+	}
+
+	.menu-events-two {
+	    background-image: url(../img/events/event-mobile2.png);
+	}
+
+	.menu-events-three .menu-events-info > h3 {
+	    padding-right: 202px;
+	}
+
 	.popup_content {
 	    max-width: 360px;
 	}
 
-	.popup_title h1 {
-	    font-size: 16px;
+	.foto-timetable-body, 
+	.foto-timetable-body img {
+	    width: 39px;
+	    height: 39px;
 	}
 
-	.popup_title h1::before {
-	    left: 20px;
-	    top: -26px;
-
+	.foto-timetable-jump, 
+	.foto-timetable-jump img {
+	    width: 34px;
+	    height: 53px;
 	}
 
-	.popup_close {
-	    top: 30px;
+	.foto-timetable-bottle, 
+	.foto-timetable-bottle img {
+	    width: 23px;
+	    height: 45px;
 	}
 
-	.popup_title {
-	    padding: 56px 60px 28px;
+	.foto-timetable-heart, 
+	.foto-timetable-heart img {
+	    width: 39px;
+	    height: 37px;
 	}
 
-	.js-mail, 
-	.js-phone, 
-	.form-btn {
-	    width: 340px;
-	    height: 65px;
-	    padding-right: 10px;
-    	padding-left: 10px;
+	.foto-timetable-dumbbell, 
+	.foto-timetable-dumbbell img {
+	    width: 48px;
+	    height: 25px;
+	}
+
+	.foto-timetable-weight, 
+	.foto-timetable-weight img {
+	    width: 35px;
+	    height: 40px;
+	}
+
+	.description {
+	    margin-left: 65px;
+    	padding-right: 20px;
 	}
 
 	.mailing-body h2 {
@@ -3849,20 +3899,13 @@ h3 {
 	}
 
 	.mailing-body {
-		width: 340px;
+		width: 100%;
 		margin: 0 auto;
 	}
 
-	/*.your-mail-btn {
-	    width: 340px;
-	}*/
-
-	/*.mail-form .js-form {
-	    width: 340px;
-	}*/
-
-	.mail-form .js-mail {
-	    width: 340px;
+	.mail-form .js-mail,
+	.your-mail-btn {
+	    width: 91.44vw;
 	    padding-left: 25px;
 	}
 
@@ -3873,17 +3916,9 @@ h3 {
 
 @media (max-width:375px) {
 
-	.banner-content {
-	    padding-top: 60px;
-	}
-
-	.content-title {
-	    font-size: 25px;
-	}
-
 	.content-link {
-    padding: 17px 70px;
-}
+	    padding: 20px 58px 26px;
+	}
 
 	.visual-image {
 	    right: 14px;
@@ -3891,20 +3926,7 @@ h3 {
 	}
 
 	.popup_title {
-	    padding: 56px 40px 28px;
-	}
-
-	.popup_content {
-	    padding-right: 10px;
-	    padding-left: 10px;
-	}
-
-	.popup_title h1::before {
-	    left: 30px;
-	}
-
-	.popup_title {
-	    padding: 56px 50px 28px;
+	    padding: 5.2vw 1.2vw;
 	}
 
 	.title-timetable {
@@ -3914,44 +3936,49 @@ h3 {
 	.mailing-body h2::before {
 	    left: 55px;
 	}
-}
-
-@media (mmax-width:360px) {
-
-	.content-link {
-	    padding: 17px 60px;
-	}
 
 	.footer-nav {
 	    gap: 10vw;
+	}
+}
+
+@media (max-width:360px) {
+
+	.content-link {
+	    padding: 17px 73px 29px;
+	}
+
+	.container-one .day,
+	.day-active {
+	    min-width: 46.44vw;
+	    max-height: 206px;
+	}
+
+	.foto-timetable-jump, 
+	.foto-timetable-jump img {
+	    width: 34px;
+	    height: 53px;
+	    margin-top: 17px;
+	}
+
+	.day-active > .description-timetable > .title-timetable {
+	    margin-bottom: -22px;
+	}
+
+	.description-timetable {
+	    margin-bottom: 21px;
+	}
+
+	.menu-events-three 
+	.menu-events-info > h3 {
+	    padding-right: 190px;
 	}
 
 	.mailing-body {
 	    width: 320px;
 	}
 
-	.footer-nav {
-	    gap: 10vw;
+	.your-mail-btn {
+	    padding: 20px 110px 20px 90px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
