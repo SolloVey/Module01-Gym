@@ -5,3 +5,5 @@
 * [Demo site](https://sollovey.github.io/Module01-Gym/index.html)
 
 ###### Contacts
+* E-mail: chelnokow@gmail.com
+* Telegram: [http://t.me/SolloVey]
