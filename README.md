@@ -6,4 +6,4 @@
 
 ###### Contacts
 * E-mail: chelnokow@gmail.com
-* Telegram: [http://t.me/SolloVey]
+* Telegram: http://t.me/SolloVey
