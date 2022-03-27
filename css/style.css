@@ -349,12 +349,12 @@ h3 {
 }
 
 .menu-events-btn {
-	display: block;
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	width: 126px;
-	height: 47px;
+	color: #2B3541;
+    font-size: 18px;
+	padding: 5px 10px;
 	background: #FBF138;
 	transition: .2s linear;
 }
@@ -370,15 +370,6 @@ h3 {
 	width: 30px;
 	height: 30px;
 	background-image: url(../img/add.svg);
-}
-
-.menu-events-btn span {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	padding: 10px 20px;
-	font-size: 18px;
-	line-height: 150%;
 }
 
 .menu-events-info-btn {
@@ -686,6 +677,7 @@ h3 {
 	margin-right: 15px;
     margin-left: 15px;
     padding-left: 19px;
+    padding-right: 19px;
 	cursor: text;
 }
 
@@ -1758,15 +1750,6 @@ h3 {
 	    font-size: 14px;
 	}
 
-	.menu-events-btn {
-	    width: 9vw;
-	    height: 3.4vw;
-	}
-
-	.menu-events-btn span {
-	    font-size: 16px;
-	}
-
 	.main-body {
 	    margin-bottom: 90px;
 	}
@@ -1995,14 +1978,6 @@ h3 {
 	    right: 95px;
 	}
 
-	.menu-events-btn {
-	    width: 10vw;
-	}
-
-	.menu-events-btn span {
-	    padding: 7px 20px;
-	}
-
 	.day-active > .description-timetable > .title-timetable {
 	    margin-bottom: 16px;
 	}
@@ -2130,11 +2105,6 @@ h3 {
 	    padding: 10px 0px 10px;
 	    width: 170px;
 	    font-size: 12px;
-	}
-
-	.menu-events-btn span {
-	    padding: 5px 18px;
-	    font-size: 15px;
 	}
 
 	.container-one {
@@ -2347,11 +2317,6 @@ h3 {
 		margin-left: 15px;
 	}
 
-	.menu-events-btn span {
-	    padding: 5px 13px;
-	    font-size: 14px;
-	}
-
 	.description {
 	    font-size: 13px;
 	}
@@ -2460,11 +2425,6 @@ h3 {
 	.menu-events-info > h3 {
 	    margin-bottom: 20px;
 	    padding: 15px 13px 13px 5px;
-	}
-
-	.menu-events-btn span {
-	    padding: 5px 13px;
-	    font-size: 12px;
 	}
 
 	.popup_content {
@@ -2828,15 +2788,6 @@ h3 {
 		display: none;
 	}
 
-	.menu-events-btn {
-	    width: 11vw;
-	    height: 3.8vw;
-	}
-
-	.menu-events-btn span {
-	    padding: 6px 16px;
-	}
-
 	.menu-events-mobile-btn {
 	    display: block;
 	    width: 3.8vw;
@@ -2861,6 +2812,8 @@ h3 {
 
 	.menu-events-btn {
 	    left: 0;
+	    right: auto;
+		font-size: 12px;
 	}
 
 	.wraper-events:hover > .menu-events-btn {
@@ -3178,11 +3131,6 @@ h3 {
 	    margin-top: 50px;
 	}
 
-	.menu-events-btn {
-	    width: 12vw;
-	    height: 4vw;
-	}
-
 	.menu-events-mobile-btn {
 	    width: 4vw;
 	    height: 4vw;
@@ -3351,16 +3299,6 @@ h3 {
 	    padding-right: 427px;
 	}
 
-	.menu-events-btn {
-    	width: 18vw;
-    	height: 5.4vw;
-	}
-
-	.menu-events-btn span {
-	    padding: 7px 26px;
-	    font-size: 15px;
-	}
-
 	.menu-events-mobile-btn {
 	    width: 5.4vw;
 	    height: 5.4vw;
@@ -3469,10 +3407,11 @@ h3 {
 	    width: 77px;
 	    height: 117px;
 	    margin-right: 25px;
+	    margin-top: 60px;
 	}
 
 	.day-active > .description-timetable > .title-timetable {
-	    margin-bottom: 90px;
+	    margin-bottom: -80px;
 	}
 
 	.foto-timetable-bottle, 
@@ -3643,10 +3582,6 @@ h3 {
 	    width: 49vw;
 	}
 
-	.menu-events-btn span {
-	    padding: 5px 20px;
-	}
-
 	.menu-events-info > h3 {
 	    padding: 13px 90px 0px 0px;
 	}
@@ -3728,11 +3663,6 @@ h3 {
 	    height: 343px;
 	}
 
-	.menu-events-btn span {
-	    padding: 4px 17px;
-	    font-size: 14px;
-	}
-
 	.menu-events-three 
 	.menu-events-info > h3 {
 	    padding-right: 331px;
@@ -3788,6 +3718,7 @@ h3 {
 	.foto-timetable-jump img {
 	    width: 57px;
 	    height: 91px;
+	    margin-top: 50px;
 	}
 
 	.foto-timetable-bottle, 
@@ -3861,10 +3792,6 @@ h3 {
 	.menu-events-three 
 	.menu-events-info > h3 {
 	    padding-right: 269px;
-	}
-
-	.menu-events-btn span {
-	    padding: 2px 12px;
 	}
 }
 
@@ -3940,16 +3867,6 @@ h3 {
 	    font-size: 16px;
 	}
 
-	.menu-events-btn {
-	    width: 87px;
-	    height: 30px;
-	}
-
-	.menu-events-btn span {
-	    padding: 6px 15px;
-	    font-size: 12px;
-	}
-
 	.menu-events-mobile-btn {
 	    width: 30px;
 	    height: 30px;
@@ -3976,10 +3893,6 @@ h3 {
 
 	.main-body {
 	    margin-bottom: 40px;
-	}
-
-	.day-active > .description-timetable > .title-timetable {
-	    margin-bottom: 75px;
 	}
 
 	.description {
@@ -4125,6 +4038,41 @@ h3 {
 	.menu-events-info > h3 {
 	    padding: 15px 0px 13px 0px;
 	}
+}	
+
+	@media (max-width: 480px) {
+	.day-active > .description-timetable > .title-timetable {
+	    margin-bottom: -50px;
+	}
+
+	.foto-timetable-jump, 
+	.foto-timetable-jump img {
+	    margin-top: 40px;
+	}
+
+	.mailing-body h2 {
+	    margin-bottom: 51px;
+	    margin-top: 27px;
+	}
+
+	.mailing-body {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.mail-form 
+	.js-mail {
+	    width: 91.44vw;
+	    padding-left: 25px;
+	}
+
+	.your-mail-btn {
+	    width: 91.44vw;
+	}
+
+	.footer-nav {
+	    gap: 13vw;
+	}
 }
 
 @media (max-width:390px) {
@@ -4155,6 +4103,7 @@ h3 {
 	.foto-timetable-jump img {
 	    width: 34px;
 	    height: 53px;
+	    margin-top: 17px;
 	}
 
 	.foto-timetable-bottle, 
@@ -4186,28 +4135,12 @@ h3 {
     	padding-right: 20px;
 	}
 
-	.mailing-body h2 {
-	    margin-bottom: 51px;
-	    margin-top: 27px;
+	.day-active > .description-timetable > .description {
+	    margin-left: 60px;
 	}
 
-	.mailing-body {
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.mail-form 
-	.js-mail {
-	    width: 91.44vw;
-	    padding-left: 25px;
-	}
-
-	.your-mail-btn {
-	    width: 91.44vw;
-	}
-
-	.footer-nav {
-	    gap: 13vw;
+	.day-active > .description-timetable > .title-timetable {
+	    margin-bottom: -22px;
 	}
 }
 
@@ -4256,17 +4189,6 @@ h3 {
 	    max-height: 206px;
 	}
 
-	.foto-timetable-jump, 
-	.foto-timetable-jump img {
-	    width: 34px;
-	    height: 53px;
-	    margin-top: 17px;
-	}
-
-	.day-active > .description-timetable > .title-timetable {
-	    margin-bottom: -22px;
-	}
-
 	.description-timetable {
 	    margin-bottom: 21px;
 	}
@@ -4279,4 +4201,3 @@ h3 {
 	    padding: 20px 110px 20px 90px;
 	}
 }
-/*Сбой при загрузке*/
